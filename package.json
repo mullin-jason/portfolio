@@ -1,0 +1,22 @@
+{
+  "name": "upgrade",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/netlify-lambda serve .",
+    "build": "./node_modules/.bin/netlify-lambda build ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "jquery": "^3.5.1",
+    "netlify-lambda": "^2.0.1",
+    "serverless-http": "^2.6.0",
+    "shufflejs": "^5.2.3",
+    "three": "^0.120.1"
+  }
+}

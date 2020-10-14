@@ -1,0 +1,169 @@
+<body>
+    
+    <div class="nav-bar">
+        <ul class="buttons">
+            <a href="#"><span style="padding: 15px; font-size: 23px; color:white;"><i class="far fa-pause-circle"></i></span></a>
+            <button id="myBtn"><span style="padding: 15px; font-size: 23px; color:white;"><i class="far fa-question-circle"></i></span></button>
+            <a href="https://github.com/mullin-jason"><span style="padding: 15px; font-size: 23px; color:white;"><i class="fab fa-github"></i></span></a>
+            <a href="#"><span style="padding: 15px; font-size: 23px; color:white;"><i class="fas fa-search-minus"></i></span></a>
+        </ul>
+    </div>
+
+    <!---
+    <div class="slide-bar">
+        <ul class="buttons">
+            <a href="#"><span style="padding: -20px; font-size: 23px; color:white;"><i class="fas fa-angle-left"></i></span></a>
+            <a href="#"><span style="padding: 70px; font-size: 23px; color:white;"><i class="fas fa-angle-right"></i></span></a>
+        </ul>
+    </div>
+    --->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p> Welcome to my website! Built with express, node.js, handlebars, isotope and hosted on neatlify. The homepage displays some pretty cool visuals thanks to Three.js, a JavaScript library used for creating 3D computer graphics.
+                Users can shuffle through different graphics using the slide nav-bar, which is located to the left of the button nav-bar. Enjoy the various visuals and thanks for checking out my site!
+            </p>
+        </div>
+    </div>
+
+    <div class="welcome-card">
+        <h1>jason mullin</h1>
+        <div class="welcome-nav">
+            <ul class="tab">
+                <li><a>portfolio</a></li>
+                <li><a href="/resume">resume </a></li>
+                <li><a>projects</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="project-container"> 
+    <div class="wrapper">
+        <header class="header">
+            <a href="">projects</a>
+            <hr>
+            <div class="container">
+                <div class="menu">
+                    <ul>
+                        
+                        <li><a data-filter=".all" href="#">All</a></li>
+                        <li><a data-filter=".c" href="#">C++</a></li>
+                        <li><a data-filter=".webapps" href="#">WebApps</a></li>
+                        <li><a data-filter=".python" href="#">Python</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="container">
+                <figure class="card webapps all">
+                    <img src="/img/weather.jpg" alt="">
+                    <figcaption>
+                        <h3>React Weather</h3>
+                        <p>Frontend in React and uses OpenWeatherMap API for data.
+                        </p>
+                        <a href="https://github.com/mullin-jason/react-weather">demo</a>
+                    </figcaption>
+                </figure>
+
+                <figure class="card c all">
+                    <img src="https://i.ibb.co/FbMcvM2/Screen-Shot-2020-05-26-at-1-40-54-PM.jpg" alt="">
+                    <figcaption>
+                        <h3>OpenGL Music Visualizer (Development)</h3>
+                        <p> OpenGL combined with C++ implementation of FFT algorithm.
+                        </p>
+                    </figcaption>
+                </figure>
+
+                <figure class="card python all">
+                    <img src="/img/conway.jpg" alt="">
+                    <figcaption>
+                        <h3>Conways Game of Life</h3>
+                        <p>Pygame implementation of John Conways game of life.</p>
+                        <a href="https://github.com/mullin-jason/conways-game-of-life">demo</a>
+                    </figcaption>
+                </figure>
+                            
+        </div>
+     </div>
+
+    <div class="resume-container">
+        <h1>resume</h1>
+        <hr>
+
+        <h2 id="lang">Languages:</h2>
+        <hr id="lan-break">
+        <p id="p-lang">
+            C/C++, Python, Ruby, Javascript, HTML/CSS, SQL <br>
+        </p>
+
+        <h2 id="frame">Frameworks:</h2>
+        <hr id="frame-break">
+        <p id="p-frame">
+            Rails, Django, React, Express  <br>
+        </p>
+
+        <h2 id="other">Other Technologies:</h2>
+        <hr id="other-break">
+        <p id="p-other">
+            NPM, Node.JS, Docker, Git, Heroku, Netlify, D3, Three.js, OpenGL
+        </p>
+
+        <h2 id="ed">Education:</h2>
+        <hr id="ed-break">
+        <p id="p-ed">
+            University of Rhode Island <br> 
+            Class of 2020 <br> 
+            Bachelor's in Computer Science <br>
+        </p>
+
+        <a href="/resume">download pdf version</a>
+    </div>
+
+    <div class="contact-container">
+        <h1>contact</h1>
+        <hr>
+        
+        <h2 id="personal">Personal Contact Information:</h2>
+        <hr id="line-break">
+        <h2 id="number"><span style="padding: 15px; font-size: 20px; color:white;"><i class="fas fa-mobile"></i></span> 774-413-0223</h2>
+        <h2 id="email"><span style="padding: 15px; font-size: 20px; color:white;"><i class="fas fa-envelope-open"></i></span>jason_mullin@my.uri.edu</h2>
+
+        <img src="/img/profile_pic.png" alt="me">    
+    </div>
+
+    <div class="footer">
+        <h1>Jason Mullin</h1>
+    </div>
+    </div>
+  
+
+
+
+    <script src="/src/button.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script type="text/javascript">
+        $(".container").isotope({
+            itemSelector: '.card',
+            layoutMode: 'fitRows'
+        })
+
+        $(".menu ul li a").click(function(){
+            $(".menu ul li a").removeClass("active");
+            $(this).addClass("active");
+
+            var selector = $(this).attr("data-filter");
+            $(".container").isotope({
+                filter: selector
+            });
+            return false;
+        });
+    </script>
+    <script src="/src/three.min.js"></script>
+    <script src="/src/cube.js"></script>
+</body>
