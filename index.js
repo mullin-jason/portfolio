@@ -26,6 +26,6 @@ app.get('/resume', (req,res) => {
 
 app.set("port", PORT);
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log("we are now live on localhost: " + PORT);
 });
