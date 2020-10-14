@@ -1,7 +1,7 @@
 const express = require('express');
 const serverless = require('serverless-http');
 const app = express();
-const PORT = process.env.PORT || '3000'
+
 
 
 
@@ -24,8 +24,8 @@ app.get('/resume', (req,res) => {
 });
 
 
-app.set("port", PORT);
 
-app.listen(process.env.PORT || PORT, () => {
-    console.log("we are now live on localhost: " + PORT);
+
+app.listen(process.env.PORT || 3000, () => {
+    nsole.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
