@@ -24,7 +24,7 @@ app.get('/globe', (req,res) => {
 })
 
 app.get('/resume', (req,res) => {
-    res.download('./Mullin_Resume.pdf');
+    res.download('./mullinResume.pdf');
 });
 
 
