@@ -19,6 +19,10 @@ app.get('/',(req,res) => {
     res.render('home');
 });
 
+app.get('/globe', (req,res) => {
+    res.render('grid');
+})
+
 app.get('/resume', (req,res) => {
     res.download('./Mullin_Resume.pdf');
 });
