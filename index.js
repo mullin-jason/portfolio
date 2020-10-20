@@ -1,5 +1,4 @@
 const express = require('express');
-const serverless = require('serverless-http');
 const app = express();
 
 
@@ -14,7 +13,7 @@ const hbar = require('express-handlebars');
 app.engine('handlebars', hbar());
 app.set('view engine', 'handlebars');
 
-// setup our routes
+// setup routes
 app.get('/',(req,res) => {
     res.render('home');
 });
