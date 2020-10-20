@@ -344,8 +344,8 @@ body {
 .contact-container {
     position: absolute;
     width: 780px;
-    height: 480px;
-    top: 195%;
+    height: 200px;
+    top: 200%;
     border-style: solid;
     border-width: 2px;
     border-color: #F8F8FF;
@@ -354,46 +354,40 @@ body {
 .contact-container h1 {
     position: absolute;
     color: #F8F8FF;
-    top: -2%;
+    top: -4%;
     left: 20px;
     
 }
 .contact-container hr {
     position: absolute;
-    top: 11%;
+    top: 25%;
     width: 100%;
 }
 .contact-container #personal {
     position: absolute;
     color: #F8F8FF;
-    top: 15%;
+    top: 30%;
     left: 3%;
 }
 .contact-container #line-break{
     position: absolute;
-    top: 24%;
+    top: 50%;
     width: 38%;
     left: 20px;
 }
 .contact-container #number {
     position: absolute;
     color: #F8F8FF;
-    top: 25%;
+    top: 50%;
     left: 2.5%;
 }
 .contact-container #email {
     position: absolute;
     color: #F8F8FF;
-    top: 35%;
+    top: 65%;
     left: 2%;
 }
-.contact-container img {
-    position: absolute;
-    top: 55%;
-    left: 5%;
-    width: 190px;
-    height: 190px;
-}
+
 
 
 /* FOOTER */
